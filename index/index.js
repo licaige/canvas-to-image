@@ -1,11 +1,14 @@
 const {wxml, style} = require('./demo.js')
 Page({
     data: {
-        src: ''
+        src: '',
+        width:'',
+        height:'',
     },
     onLoad() {
         this.widget = this.selectComponent('.widget')
     },
+    //渲染到canvas
     renderToCanvas() {
         const p1 = this.widget.renderToCanvas({wxml, style})
         p1.then((res) => {
