@@ -16,3 +16,8 @@
     top:99999rpx;
     z-index: -1;
 }
+.cavasImage{
+    width: 750rpx;
+    height: 768rpx;
+    display: block;
+}
