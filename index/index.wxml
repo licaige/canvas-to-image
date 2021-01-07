@@ -4,4 +4,8 @@
 
 <button bindtap="extraImage">导出图片</button>
 
+
+<button bindtap="saveImage">保存到相册</button>
+
+
 <image src="{{src}}" style="width: {{width}}px; height: {{height}}px"></image>
