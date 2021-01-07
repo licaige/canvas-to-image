@@ -1,4 +1,7 @@
-let bg='https://applet.lanlinker.com/lanlinker-applets/image/0d8001282e424ab8a070006dec295862_sharebg.png'
+//海报需要的数据，可以通过接口或者全局globalData进行传递
+const App = getApp();
+// let bg='https://applet.lanlinker.com/lanlinker-applets/image/0d8001282e424ab8a070006dec295862_sharebg.png'
+let bg=App.globalData.bg
 const wxml = `
 <view class="outline">
     <image class="outlineImg" src="${bg}"></image>
