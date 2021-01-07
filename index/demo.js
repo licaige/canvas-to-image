@@ -1,6 +1,7 @@
+let bg='https://applet.lanlinker.com/lanlinker-applets/image/0d8001282e424ab8a070006dec295862_sharebg.png'
 const wxml = `
 <view class="outline">
-    <image class="outlineImg" src="https://applet.lanlinker.com/lanlinker-applets/image/0d8001282e424ab8a070006dec295862_sharebg.png"></image>
+    <image class="outlineImg" src="${bg}"></image>
     <image class="lineImg" src="https://applet.lanlinker.com/lanlinker-applets/image/0085f45f92e4431ba1b250eab86a9858_xiaochengxun.jpg"></image>
 </view>
 `
