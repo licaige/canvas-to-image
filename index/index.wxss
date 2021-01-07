@@ -1,8 +1,16 @@
 .widget {
-
+    position:fixed;
+    top:99999rpx;
+    z-index: -1;
 }
 
 #canvas {
-    width: 576px!important;
+   /* width: 576px!important;
     height: 768px!important;
+    z-index: 99999;
+    position: relative;
+    left: 99999px;*/
+    position:fixed;
+    top:99999rpx;
+    z-index: -1;
 }
