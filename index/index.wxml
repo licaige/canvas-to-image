@@ -7,5 +7,5 @@
 
 <button bindtap="saveImage">保存到相册</button>
 
-
-<image src="{{src}}" style="width: {{width}}px; height: {{height}}px"></image>
+<!--<image src="{{src}}" style="width: {{width}}px; height: {{height}}px"></image>-->
+<image src="{{src}}" style="width: {{width}}rpx; height: {{height}}rpx"></image>

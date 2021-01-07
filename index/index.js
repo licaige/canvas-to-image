@@ -9,6 +9,15 @@ Page({
     onLoad() {
         this.widget = this.selectComponent('.widget')
         console.log('this.widget 李琦',this.widget)
+        const sysInfo = wx.getSystemInfoSync();
+        const screenWidth = sysInfo.screenWidth;
+        this.factor = screenWidth / 750;	// 获取比例
+    },
+    toPx(rpx) {	// rpx转px
+        return rpx * this.factor;
+    },
+    toRpx(px) {	// px转rpx
+        return px / this.factor;
     },
     //渲染到canvas,生成图片
     renderToCanvas() {
@@ -55,8 +64,10 @@ Page({
         p2.then(res => {
             this.setData({
                 src: res.tempFilePath,
-                width: this.container.layoutBox.width,
-                height: this.container.layoutBox.height
+                /*width: this.container.layoutBox.width,
+                height: this.container.layoutBox.height*/
+                width: this.toRpx(this.container.layoutBox.width),
+                height: this.toRpx(this.container.layoutBox.height)
             })
         })
     },
